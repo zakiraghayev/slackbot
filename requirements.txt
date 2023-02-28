@@ -2,8 +2,8 @@ certifi==2021.5.30
 chardet==4.0.0
 idna==3.3
 requests==2.26.0
-slack-sdk==3.11.2
-slack-sdk-boot==0.1.0
-slack-sdk-errors==1.0.2
-slack-sdk-web==5.16.0
+slack-sdk
+slack-sdk-boot
+slack-sdk-errors
+slack-sdk-web
 urllib3==1.26.6
