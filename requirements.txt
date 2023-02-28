@@ -3,7 +3,4 @@ chardet==4.0.0
 idna==3.3
 requests==2.26.0
 slack-sdk
-slack-sdk-boot
-slack-sdk-errors
-slack-sdk-web
 urllib3==1.26.6
