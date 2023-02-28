@@ -1,4 +1,4 @@
-import requests, sys, json
+import requests, sys, json, os
 
 # Get arguments from command line
 if len(sys.argv) < 2:
