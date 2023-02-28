@@ -2,6 +2,7 @@ import os
 import sys
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
+from dotenv import load_dotenv
 
 # Get arguments from command line
 if len(sys.argv) < 3:
@@ -10,8 +11,15 @@ if len(sys.argv) < 3:
 channel_name = sys.argv[1]
 message = sys.argv[2]
 
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Get the Slack API token from the environment variable
+SLACK_API_TOKEN = os.getenv('SLACK_API_TOKEN')
+
 # Set up Slack client
-client = WebClient(token=os.environ["SLACK_API_TOKEN"])
+client = WebClient(token=SLACK_API_TOKEN)
 
 # Find channel ID by name
 try:
