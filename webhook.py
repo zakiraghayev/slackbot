@@ -1,4 +1,5 @@
 import requests, sys, json, os
+from dotenv import load_dotenv
 
 # Get arguments from command line
 if len(sys.argv) < 2:
