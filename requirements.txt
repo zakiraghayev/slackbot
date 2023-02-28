@@ -4,3 +4,4 @@ idna==3.3
 requests==2.26.0
 slack-sdk
 urllib3==1.26.6
+python-dotenv
