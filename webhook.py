@@ -9,6 +9,10 @@ message = sys.argv[1]
 # Define the message payload
 payload = {"text": f"{message}"}
 
+
+# Load environment variables from .env file
+load_dotenv()
+
 # Define the webhook URL
 url = os.getenv('SLACK_WEBHOOK_URL')
 
